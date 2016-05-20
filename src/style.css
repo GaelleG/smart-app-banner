@@ -1,101 +1,122 @@
 html, body {
-	margin-top: 0;
-	transition: margin .5s;
+  margin-top: 0;
+  transition: margin .5s;
 }
 .smartbanner-show {
-	margin-top: 80px;
+  margin-top: 80px;
 }
 .smartbanner-show .smartbanner {
-	opacity: 1;
-	top: 0;
-	transition: top .5s, opacity 0s 0s;
+  top: 0;
+  opacity: 1;
+  transition: top .5s, opacity 0s 0s;
 }
 
-/** Default **/
 .smartbanner {
-	position: absolute;
-	left: 0;
-	top: -80px;
-	opacity: 0;
-	width: 100%;
-	height: 80px;
-	line-height: 80px;
-	font-family: 'Helvetica Neue', sans-serif;
-	background: #f4f4f4;
-	z-index: 9998;
-	-webkit-font-smoothing: antialiased;
-	overflow: hidden;
-	-webkit-text-size-adjust: none;
-	transition: top .5s, opacity 0s .5s;
+  position: absolute;
+  z-index: 9998;
+  left: 0;
+  top: -80px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-family: 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  -webkit-text-size-adjust: none;
+  color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+  opacity: 0;
+  transition: top .5s, opacity 0s .5s;
 }
 
 .smartbanner-container {
-	margin: 0 auto;
-	white-space: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
 }
 
 .smartbanner-close {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 5px 0 5px;
-	font-family: 'ArialRoundedMTBold', Arial;
-	font-size: 20px;
-	text-align: center;
-	color: #888;
-	text-decoration: none;
-	border: 0;
-	border-radius: 14px;
-	-webkit-font-smoothing: subpixel-antialiased;
+  float: left;
+  z-index: 2;
+  top: 14px;
+  margin-right: 0;
+  padding: 0 8px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  opacity: .5;
+  transition: opacity .3s ease;
 }
 
 .smartbanner-close:active,
 .smartbanner-close:hover {
-	color: #aaa;
+  opacity: 1;
 }
 
 .smartbanner-icon {
-	display: inline-block;
-	vertical-align: middle;
-	width: 57px;
-	height: 57px;
-	margin-right: 12px;
-	background-size: cover;
-	border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 57px;
+  height: 57px;
+  margin-right: 12px;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .smartbanner-info {
-	display: inline-block;
-	vertical-align: middle;
-	width: 44%;
-	font-size: 11px;
-	line-height: 1.2em;
-	font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 44%;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777;
 }
 
 .smartbanner-title {
-	font-size:13px;
-	line-height: 18px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
 }
 
 .smartbanner-button {
-	position: absolute;
-	right: 20px;
-	top: 0;
-	bottom: 0;
-	margin: auto 0;
-	height: 24px;
-	font-size: 14px;
-	line-height: 24px;
-	text-align: center;
-	font-weight: bold;
-	color: #6a6a6a;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  height: 28px;
+  line-height: 28px;
+  margin: auto 0;
+  padding: 0px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all .2s ease;
 }
 
-.smartbanner-button:active, .smartbanner-button:hover {
-	color: #aaa;
+.smartbanner-button:active,
+.smartbanner-button:hover {
+  color: #000;
+  background: #E0E0E0;
+  border: 1px solid #BABABA;
 }
 
 .smartbanner-button-text {
@@ -103,198 +124,4 @@ html, body {
 
 .smartbanner-button-text:active,
 .smartbanner-button-text:hover {
-}
-
-
-/** iOS **/
-.smartbanner-ios {
-	background: #f4f4f4;
-	background: linear-gradient(to bottom, #f4f4f4, #cdcdcd);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-	line-height: 80px;
-}
-
-.smartbanner-ios .smartbanner-close {
-	border: 0;
-	width: 18px;
-	height: 18px;
-	line-height: 18px;
-	color: #888;
-	text-shadow: 0 1px 0 white;
-}
-
-.smartbanner-ios .smartbanner-close:active,
-.smartbanner-ios .smartbanner-close:hover {
-	color: #aaa;
-}
-
-.smartbanner-ios .smartbanner-icon {
-	background: rgba(0,0,0,0.6);
-	background-size: cover;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.smartbanner-ios .smartbanner-info { 
-	color: #6a6a6a;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-.smartbanner-ios .smartbanner-title {
-	color:#4d4d4d;
-	font-weight: bold;
-}
-
-.smartbanner-ios .smartbanner-button {
-	padding: 0 10px;
-	min-width: 10%;
-	color: #6a6a6a;
-	background: #efefef;
-	background: linear-gradient(to bottom, #efefef, #dcdcdc);
-	border-radius: 3px;
-	box-shadow: inset 0 0 0 1px #bfbfbf, 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 0 rgba(255, 255, 255, 0.7) inset;
-}
-
-.smartbanner-ios .smartbanner-button:active,
-.smartbanner-ios .smartbanner-button:hover {
-	background: #dcdcdc;
-	background: linear-gradient(to bottom, #dcdcdc, #efefef);
-}
-
-.smartbanner-ios .smartbanner-button-text {
-}
-
-.smartbanner-ios .smartbanner-button-text:active,
-.smartbanner-ios .smartbanner-button-text:hover {
-}
-
-
-/** Android **/
-.smartbanner-android {
-	background: #3d3d3d url('dark_background_stripes.gif');
-	box-shadow: inset 0 4px 0 #88B131;
-	line-height: 82px;
-}
-
-.smartbanner-android .smartbanner-close {
-	border: 0;
-	width: 17px;
-	height: 17px;
-	line-height: 17px;
-	margin-right: 7px;
-	color: #b1b1b3;
-	background: #1c1e21;
-	text-shadow: 0 1px 1px #000;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) inset, 0 1px 1px rgba(255, 255, 255, 0.3);
-}
-
-.smartbanner-android .smartbanner-close:active,
-.smartbanner-android .smartbanner-close:hover {
-	color: #eee;
-}
-
-.smartbanner-android .smartbanner-icon {
-	background-color: transparent;
-	box-shadow: none;
-}
-
-.smartbanner-android .smartbanner-info {
-	color:#ccc;
-	text-shadow:0 1px 2px #000;
-}
-
-.smartbanner-android .smartbanner-title {
-	color:#fff;
-	font-weight: bold;
-}
-
-.smartbanner-android .smartbanner-button {
-	min-width: 12%;
-	color: #d1d1d1;
-	padding: 0;
-	background: none;
-	border-radius: 0;
-	box-shadow: 0 0 0 1px #333, 0 0 0 2px #DDDCDC;
-}
-
-.smartbanner-android .smartbanner-button:active,
-.smartbanner-android .smartbanner-button:hover {
-	background: none;
-}
-
-.smartbanner-android .smartbanner-button-text {
-	text-align: center;
-	display: block;
-	padding: 0 10px;
-	background: #42B6C9;
-	background: linear-gradient(to bottom, #42B6C9, #39A9BB);
-	text-transform: none;
-	text-shadow: none;
-	box-shadow: none;
-}
-
-.smartbanner-android .smartbanner-button-text:active,
-.smartbanner-android .smartbanner-button-text:hover {
-	background: #2AC7E1;
-}
-
-
-/** Windows **/
-.smartbanner-windows {
-	background: #f4f4f4;
-	background: linear-gradient(to bottom, #f4f4f4, #cdcdcd);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-	line-height: 80px;
-}
-
-.smartbanner-windows .smartbanner-close {
-	border: 0;
-	width: 18px;
-	height: 18px;
-	line-height: 18px;
-	color: #888;
-	text-shadow: 0 1px 0 white;
-}
-
-.smartbanner-windows .smartbanner-close:active,
-.smartbanner-windows .smartbanner-close:hover {
-	color: #aaa;
-}
-
-.smartbanner-windows .smartbanner-icon {
-	background: rgba(0,0,0,0.6);
-	background-size: cover;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.smartbanner-windows .smartbanner-info {
-	color: #6a6a6a;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-.smartbanner-windows .smartbanner-title {
-	color:#4d4d4d;
-	font-weight: bold;
-}
-
-.smartbanner-windows .smartbanner-button {
-	padding: 0 10px;
-	min-width: 10%;
-	color: #6a6a6a;
-	background: #efefef;
-	background: linear-gradient(to bottom, #efefef, #dcdcdc);
-	border-radius: 3px;
-	box-shadow: inset 0 0 0 1px #bfbfbf, 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 0 rgba(255, 255, 255, 0.7) inset;
-}
-
-.smartbanner-windows .smartbanner-button:active,
-.smartbanner-windows .smartbanner-button:hover {
-	background: #dcdcdc;
-	background: linear-gradient(to bottom, #dcdcdc, #efefef);
-}
-
-.smartbanner-windows .smartbanner-button-text {
-}
-
-.smartbanner-windows .smartbanner-button-text:active,
-.smartbanner-windows .smartbanner-button-text:hover {
 }
