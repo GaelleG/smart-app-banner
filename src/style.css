@@ -102,7 +102,7 @@ html, body {
   margin: auto 0;
   padding: 0px 12px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -115,7 +115,7 @@ html, body {
 .smartbanner-button:active,
 .smartbanner-button:hover {
   color: #000;
-  background: #E0E0E0;
+  background-color: #E0E0E0;
   border: 1px solid #BABABA;
 }
 

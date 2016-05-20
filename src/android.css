@@ -1,0 +1,51 @@
+.smartbanner-android {
+}
+
+.smartbanner-android .smartbanner-close {
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  font-size: 15px;
+  margin: 34px 6px 0px;
+  border-radius: 14px;
+  border: 0;
+  line-height: 14px;
+  color: #b1b1b3;
+  background: #efefef;
+  padding: 0;
+  opacity: 1;
+}
+
+.smartbanner-android .smartbanner-close:active,
+.smartbanner-android .smartbanner-close:hover {
+}
+
+.smartbanner-android .smartbanner-icon {
+}
+
+.smartbanner-android .smartbanner-info {
+}
+
+.smartbanner-android .smartbanner-title {
+}
+
+.smartbanner-android .smartbanner-button {
+  /*display: inline-block;*/
+  padding: 0 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #A4C639;
+  border-bottom: 3px solid #A4C639;
+  border-radius: 5px;
+}
+
+.smartbanner-android .smartbanner-button:active,
+.smartbanner-android .smartbanner-button:hover {
+  color: #000;
+  background-color: #c1d739;
+  border-bottom: 3px solid #8c9c29;
+}
+
+.smartbanner-android .smartbanner-button-text:active,
+.smartbanner-android .smartbanner-button-text:hover {
+}

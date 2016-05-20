@@ -5,6 +5,9 @@ var root = doc && doc.documentElement;
 var cookie = require('cookie-cutter');
 var ua = require('ua-parser-js');
 require('./style.css');
+require('./ios.css');
+require('./android.css');
+require('./windows.css');
 
 // IE < 11 doesn't support navigator language property.
 var userLangAttribute = navigator.language || navigator.userLanguage || navigator.browserLanguage;
