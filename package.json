@@ -4,7 +4,7 @@
   "description": "Smart banner for Android or iOS",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t cssify index.js -s SmartBanner | ccjs - > smart-app-banner.js"
+    "build": "browserify -t cssify src/index.js -s SmartBanner | ccjs - > smart-app-banner.js"
   },
   "repository": {
     "type": "git",
