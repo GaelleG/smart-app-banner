@@ -80,7 +80,7 @@ var SmartBanner = function(options) {
 	}
 
 	this.create();
-	this.show();
+	setTimeout(this.show.bind(this), 100);
 };
 
 SmartBanner.prototype = {
